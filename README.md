@@ -166,4 +166,5 @@ Browse the [API documentation](https://ixortalk.github.io/udini-android-sdk/).
 
 ## Included Samples
 
-Sample apps that explore core Udini features are available for Android, See [the sample](./sample/) to get started.
+Sample apps that explore core Udini features are available for Android, 
+see [the sample](https://github.com/IxorTalk/udini-android-sdk/tree/master/sample/) to get started.
