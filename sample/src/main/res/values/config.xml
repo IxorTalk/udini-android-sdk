@@ -1,0 +1,9 @@
+<resources>
+    <string name="oauth_authorize_uri_path">/uaa/oauth/authorize</string>
+    <string name="oauth_token_uri_path">/uaa/oauth/token</string>
+    <string name="oauth_redirect_scheme">udini-example</string>
+    <string name="oauth_redirect_host">authorize</string>
+    <string name="oauth_redirect_path">/</string>
+    <string name="oauth_redirect_uri">udini-example://authorize/</string>
+    <string name="oauth_logout_path">/uaa/oauth/logout</string>
+</resources>

@@ -160,5 +160,10 @@ be launched in which the OAuth2 flow is started. Recording authentication state 
 with the server is all handled by the SDK. You will only need to worry about receiving
 `onUdiniLoginSuccessful()` and/or `onUdiniLoginFailed(UdiniException exception, int errorCode)`.
 
-For a more detailed example of an Udini client implementation please check out the sample 
-application.
+## API Documentation
+
+Browse the [API documentation](https://ixortalk.github.io/udini-android-sdk/).
+
+## Included Samples
+
+Sample apps that explore core Udini features are available for Android, See [the sample](./blob/master/sample/) to get started.
