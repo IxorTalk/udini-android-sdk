@@ -1,5 +1,20 @@
+# Udini SDK for Android
 
-# Udini SDK for Android user guide
+## Features
+
+- [x] BLE Device Scanning, connecting, Action execution
+- [x] Udini api integration: Data fetching, user management, remote actions
+- [x] Secure emory & disk persistence
+- [x] RSA asymmetric security
+- [x] OAuth2 authentication
+- [x] Notification support
+
+## Requirements
+
+- Android 5.0 (Lollipop), or higher
+- Android Studio 3, or higher
+
+# User guide
 
 This user guide describes the components that make up the Udini SDK for Android, and how to
 use them when building your own applications.
