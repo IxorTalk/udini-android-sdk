@@ -1,0 +1,44 @@
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion 28
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    defaultConfig {
+        applicationId "com.ixortalk.udini.android.sample"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation "com.ixortalk.udini.android:udini-android-sdk:1.1.0"
+
+    implementation "androidx.appcompat:appcompat:1.0.2"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.0.0"
+    implementation "com.github.hadilq.liveevent:liveevent:1.0.1"
+
+    annotationProcessor "org.androidannotations:androidannotations:4.6.0"
+    implementation "org.androidannotations:androidannotations-api:4.6.0"
+
+    implementation "com.github.hotchemi.permissionsdispatcher:permissionsdispatcher:4.3.0"
+    annotationProcessor "com.github.hotchemi.permissionsdispatcher:permissionsdispatcher-processor:4.3.0"
+    annotationProcessor "com.github.AleksanderMielczarek:AndroidAnnotationsPermissionsDispatcherPlugin:2.1.1"
+}
