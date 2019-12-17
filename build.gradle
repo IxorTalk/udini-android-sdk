@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.support_lib_version = '1.0.0'
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://maven.fabric.io/public"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath "com.android.tools.build.jetifier:jetifier-processor:1.0.0-beta08"
+        classpath 'com.google.gms:google-services:4.3.3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        // todo: have a publicly available maven repo here, hosting our binaries
+        maven {
+            url "https://repo.ixor.be/nexus/content/repositories/ixor-releases/"
+            credentials {
+                // make sure you have a ~/.gradle/gradle.properties
+                // containing ixorNexusMavenUser and ixorNexusMavenPassword with the proper
+                // values to access the repository at the URL above
+                username = ixorNexusMavenUser
+                password = ixorNexusMavenPassword
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
