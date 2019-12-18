@@ -29,8 +29,8 @@ public class SampleApplication extends Application {
         dataModel.getLoggedIn().postValue(udini.getUserProfile() != null);
 
         final UdiniOptions options = udini.getOptions().toBuilder()
-                .setAuthBaseUrl("https://identity-tst.udini.eu")
-                .setRestApiBaseUrl("https://www-tst.udini.eu")
+                .setAuthBaseUrl("https://identity.udini.eu")
+                .setRestApiBaseUrl("https://manager.udini.eu")
                 .setClientId("J5hu2Sc5epeZ5KFOpZeweCKTpO9Euaqx")
                 .setClientSecret("8jL_ISMVx2xoMC-D9r4ImOTz8UzHU2ftES_4dmVPaLkKNt3smRS-XhSsJIUJh5Ov")
                 .setRedirectUri(Uri.parse("udini-example://authorize/"))
